@@ -23,11 +23,6 @@ app.get("/location", (req,res) =>
     res.render("location")
 })
 
-app.post("/location", (req,res) =>
-{
-    
-})
-
 app.get("/order", (req,res) =>
 {
     res.render("order")
