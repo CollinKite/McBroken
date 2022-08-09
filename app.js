@@ -1,9 +1,14 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const { response } = require('express');
+const geoLite = require("geoip-lite");
+const ip = require('ip');
 
 const app = express();
 const port = 3000;
+
+var userIP = "69.27.21.153";//ip.address();
+var geo = geoLite.lookup(userIP);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}))
@@ -15,6 +20,8 @@ app.set("view engine", "pug");
 
 app.get("/", (req,res) =>
 {
+    console.log(userIP)
+    console.log(geo);
     res.render("home")
 })
 
