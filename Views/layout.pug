@@ -4,6 +4,7 @@ html
     head 
         title McBroken 
         link(rel="stylesheet" href="./CSS/style.css")
+        link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css")
     body 
         header
             nav 
@@ -12,57 +13,53 @@ html
             a(href="/order") Order
         section(class="content")
             block layout-content
-    footer(class="site-footer")
-        div(class="container")
-            div(class="row")
-                div(class="col-sm-12 col-md-6")
-                    h6 About
-                    p(class="text-justify") McBorken is a program where users can use free promotions going at McDonalds the help satisify hunger. We came up with this program because we were hungry ourselves and wanted to free humankind from the strict restrictions of money. Also to blackmail McDonalds
-        div(class="col-xs-6 col-md-3")
-            h6 Categories
-            ul(class="footer-links")
-                li
-                    a(href="https://mcdonalds.com") C
-                li
-                    a(href="https://mcdonalds.com") UI Design
-                li
-                    a(href="https://mcdonalds.com") PHP
-                li
-                    a(href="https://mcdonalds.com") Java
-                li
-                    a(href="https://mcdonalds.com") Android
-                li  
-                    a(href="https://mcdonalds.com") Templates
-        div(class="col-xs-6 col-md-3")
-            h6 Quick Links
-            <ul class="footer-links">
-                li
-                    a(href="https://mcdonalds.com") About Us
-                li
-                    a(href="https://mcdonalds.com") Contact Us
-                li 
-                    a(href="https://mcdonalds.com") Contribute
-                li
-                    a(href="https://mcdonalds.com") Privacy Policy
-                li
-                    a(href="https://mcdonalds.com") Sitemap
-        hr
-        div(class="container")
-            div(class="row")
-            div(class="col-md-8 col-sm-6 col-xs-12")
-                p(class="copyright-text") Copyright &copy; 2022 All Rights Reserved by 
-                    a(href="#") McBroken
-            div(class="col-md-4 col-sm-6 col-xs-12")
-                <ul class="social-icons">
-                    li
-                        a(class="facebook" href="#")
-                            i(class="fa fa-facebook")
-                    li
-                        a(class="twitter" href="#")
-                            i(class="fa fa-twitter")
-                    li
-                        a(class="dribbble" href="#")
-                            i(class="fa fa-dribbble")
-                    li
-                        a(class="linkedin" href="#")
-                            i(class="fa fa-linkedin")  
+        footer(class="site-footer")
+            div(class="container")
+                div(class="row")
+                    div(class="footer-col")
+                        h4 Company
+                        ul 
+                            li
+                                a(href="https://mcdonalds.com") about us
+                            li
+                                a(href="https://mcdonalds.com") our service
+                            li
+                                a(href="https://mcdonalds.com") privacy policy
+                            li
+                                a(href="https://mcdonalds.com") affiliate program
+                        
+                    div(class="footer-col")
+                        h4 Get Help
+                        ul(class="footer-links")
+                            li
+                                a(href="https://mcdonalds.com") FAQ
+                            li
+                                a(href="https://mcdonalds.com") shipping
+                            li
+                                a(href="https://mcdonalds.com") returns
+                            li
+                                a(href="https://mcdonalds.com") order status
+                            li
+                                a(href="https://mcdonalds.com") payment options
+                    div(class="footer-col")
+                        h4 Online Shop
+                        ul(class="footer-links")
+                            li
+                                a(href="https://mcdonalds.com") watch
+                            li
+                                a(href="https://mcdonalds.com") bag
+                            li 
+                                a(href="https://mcdonalds.com") shoes
+                            li
+                                a(href="https://mcdonalds.com") dress 
+                    div(class="footer-col")
+                        h4 Follow Us
+                        div(class="social-links")
+                            a(href="#")
+                                i(class="fab fa-facebook-f")
+                            a(href="#")
+                                i(class="fab fa-twitter")
+                            a(href="#")
+                                i(class="fab fa-instagram")
+                            a(href="#")
+                                i(class="fab fa-linkedin-in")
