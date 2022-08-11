@@ -7,10 +7,19 @@ html
         link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css")
     body 
         header
+            img(class="logo" src="Public/Images/logo.png" alt="logo")
             nav 
-            a(href="/") Home
-            a(href="/location") Location
-            a(href="/order") Order
+                ul(class="nav_links")
+                    li 
+                        a(href="/") Home
+                    li
+                        a(href="/location") Location
+                    li
+                        a(href="/order") Order
+
+            a(class="cta" href="#")
+                button Contact 
+
         section(class="content")
             block layout-content
         footer(class="site-footer")
@@ -55,11 +64,11 @@ html
                     div(class="footer-col")
                         h4 Follow Us
                         div(class="social-links")
-                            a(href="#")
+                            a(href="https://www.facebook.com/McDonalds")
                                 i(class="fab fa-facebook-f")
-                            a(href="#")
+                            a(href="https://twitter.com/McDonalds")
                                 i(class="fab fa-twitter")
-                            a(href="#")
+                            a(href="https://www.instagram.com/mcdonalds/")
                                 i(class="fab fa-instagram")
-                            a(href="#")
+                            a(href="https://www.linkedin.com/company/mcdonald%27s-corporation/")
                                 i(class="fab fa-linkedin-in")
