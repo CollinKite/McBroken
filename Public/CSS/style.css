@@ -127,15 +127,22 @@ header {
 button {
   margin-left: 20px;
   padding: 9px 25px;
-  background-color: rgba(0,136,169,1);
+  /* background-color: rgba(0,136,169,1); */
   border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  background-image: linear-gradient(to right, rgb(1 134 218), rgb(182 49 167));
+  /* border: 0; */
+  color: #ffffff;
 }
 
 button:hover {
   background-color: rgba(0,136,169,0.8);
+}
+
+a:visited{
+  text-decoration: none;
 }
 /*responive*/
 @media(max-width: 767px){
@@ -144,9 +151,10 @@ button:hover {
     margin-bottom: 30px;
   }
   header{
-    width: 50%;
+    width: 75%;
     margin-bottom: 30px;
   }
+
 }
 
 @media(max-width: 574px){
@@ -155,5 +163,6 @@ button:hover {
   }
   header {
     width: 100%;
+
   }
 }
