@@ -37,7 +37,9 @@ app.get("/order", (req,res) =>
 
 app.post("/order", (req,res) =>
 {
-
+    res.render("order")
+    // setMcAddress();
+    // setMcOrderNumber();
 })
 
 app.listen(port, () =>
@@ -45,3 +47,14 @@ app.listen(port, () =>
     console.log(`Listening on port ${port}`)
 })
 
+// const setMcAddress = () =>
+// {
+//     const address = document.getElementById("address");
+//     address.innerText = "TODO: Place Mcdonalds Address Here";
+// }
+
+// const setMcOrderNumber = () =>
+// {
+//     const orderNumber = document.getElementById("orderNumber");
+//     orderNumber.innerText = "TODO: Place Order Number Here";
+// }
