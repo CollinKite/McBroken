@@ -118,6 +118,7 @@ header {
 .nav_links li a {
   transition: all 0.3s ease 0s;
   text-decoration: none;
+  color: black;
 }
 
 .nav_links li a:hover {
@@ -138,7 +139,7 @@ button {
 }
 
 button:hover {
-  background-color: rgba(0,136,169,0.8);
+  box-shadow: rgba(var(--primary-color), 0.5) 0px 0px 20px 0px;
 }
 
 a:visited{
