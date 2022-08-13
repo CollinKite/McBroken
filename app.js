@@ -30,6 +30,10 @@ app.get("/location", (req,res) =>
     res.render("location")
 })
 
+app.get("/payment", (req, res) => {
+    res.render("payment")
+})
+
 app.get("/order", (req,res) =>
 {
     res.render("order")
