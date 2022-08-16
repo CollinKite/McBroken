@@ -1,0 +1,10 @@
+C:\Users\Ed\Dev\McBroken\McBrokenBackend\mailinator-csharp-client\bin\Debug\netstandard2.0\mailinator-csharp-client.deps.json
+C:\Users\Ed\Dev\McBroken\McBrokenBackend\mailinator-csharp-client\bin\Debug\netstandard2.0\mailinator-csharp-client.dll
+C:\Users\Ed\Dev\McBroken\McBrokenBackend\mailinator-csharp-client\bin\Debug\netstandard2.0\mailinator-csharp-client.pdb
+C:\Users\Ed\Dev\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Debug\netstandard2.0\mailinator-csharp-client.csproj.AssemblyReference.cache
+C:\Users\Ed\Dev\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Debug\netstandard2.0\mailinator-csharp-client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ed\Dev\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Debug\netstandard2.0\mailinator-csharp-client.AssemblyInfoInputs.cache
+C:\Users\Ed\Dev\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Debug\netstandard2.0\mailinator-csharp-client.AssemblyInfo.cs
+C:\Users\Ed\Dev\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Debug\netstandard2.0\mailinator-csharp-client.csproj.CoreCompileInputs.cache
+C:\Users\Ed\Dev\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Debug\netstandard2.0\mailinator-csharp-client.dll
+C:\Users\Ed\Dev\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Debug\netstandard2.0\mailinator-csharp-client.pdb
