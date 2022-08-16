@@ -9,10 +9,15 @@ namespace AccountBot
 {
     public class Controller
     {
-        public void Start()
+        public async Task Start()
         {
             Account account = new Account();
-            Console.WriteLine(account.DeviceID);
+            await Account.RegisterAccount("kingbob", account.DeviceID);
+
+
+            //Email email = new("code1");
+            //email.GetInboxAsync().Wait();
+            //email.VerifyEmail().Wait();
         }
     }
 }

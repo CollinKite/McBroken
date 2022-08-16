@@ -12,7 +12,11 @@ namespace AccountBot
 {
     public class Account
     {
+
+        private static Random random = new Random();
         public string DeviceID = GetRandomHexNumber(16);
+
+
         private static async Task<string> InitialJWT()
         {
             var clientHandler = new HttpClientHandler
@@ -59,7 +63,7 @@ namespace AccountBot
             }
         }
 
-        public async Task<string> RegisterAccount(string emailPrefix, int zip = 84112, string firstName="King", string lastName="Bob")
+        public static async Task RegisterAccount(string emailPrefix, string id, int zip = 84112, string firstName="King", string lastName="Bob")
         {
             
             
@@ -93,7 +97,7 @@ namespace AccountBot
                     { "X-Newrelic-Id", "UwUDUVNVGwcDUlhbDwUBVg==" },
                 },
 
-                Content = new StringContent("{\"address\":{\"country\":\"US\",\"zipCode\":" + zip + "},\"audit\":{\"registrationChannel\":\"M\"},\"credentials\":{\"loginUsername\":\" " + emailPrefix +"@mail.bigmac.social\",\"sendMagicLink\":true,\"type\":\"email\"},\"device\":{\"deviceId\":\"" + DeviceID + "\",\"deviceIdType\":\"AndroidId\",\"isActive\":\"Y\",\"os\":\"android\",\"osVersion\":\"12\",\"pushNotificationId\":\"fTVT0zZgFd4:APA91bGX2VWiuH_zkn2umGY5WWondtNLdoCXjehndHqvvx7bX4JFY-w2-brZIfWcvIEVVZxCpNxGbFmyAqCb5gN3z4daSUQ1ktTljTm5drQTDzeXVeoWPq7359cBe-ou8HKgBKPP1lGE\",\"timezone\":\"America/Denver\"},\"emailAddress\":\"" + emailPrefix + "@mail.bigmac.social\",\"firstName\":\""+firstName+"\",\"lastName\":\""+lastName+"\",\"optInForMarketing\":false,\"policies\":{\"acceptancePolicies\":{\"1\":true,\"4\":true,\"5\":false,\"6\":false}},\"preferences\":[{\"details\":{\"mobileApp\":\"en-US\",\"email\":\"en-US\"},\"preferenceId\":1},{\"details\":{\"mobileApp\":\"N\",\"email\":\"N\"},\"preferenceId\":2},{\"details\":{\"mobileApp\":\"Y\",\"email\":\"Y\"},\"preferenceId\":3},{\"details\":{\"mobileApp\":\"Y\",\"email\":\"Y\"},\"preferenceId\":4},{\"details\":{\"mobileApp\":\"Y\",\"email\":\"Y\"},\"preferenceId\":6},{\"details\":{\"mobileApp\":\"Y\",\"email\":\"Y\"},\"preferenceId\":7},{\"details\":{\"mobileApp\":\"Y\",\"email\":\"Y\"},\"preferenceId\":8},{\"details\":{\"mobileApp\":\"Y\",\"email\":\"Y\"},\"preferenceId\":9},{\"details\":{\"mobileApp\":\"Y\",\"email\":\"Y\"},\"preferenceId\":10},{\"details\":{\"mobileApp\":[4.0,5.0],\"email\":[1.0,2.0,3.0]},\"preferenceId\":11},{\"details\":{\"enabled\":\"Y\"},\"preferenceId\":12},{\"details\":{\"enabled\":\"Y\"},\"preferenceId\":13},{\"details\":{\"enabled\":\"Y\"},\"preferenceId\":14},{\"details\":{\"enabled\":\"Y\"},\"preferenceId\":15},{\"details\":{\"enabled\":\"Y\"},\"preferenceId\":16},{\"details\":{\"enabled\":\"Y\"},\"preferenceId\":17},{\"details\":{\"enabled\":\"Y\"},\"preferenceId\":18},{\"details\":{\"enabled\":\"Y\"},\"preferenceId\":19},{\"details\":{\"enabled\":\"Y\"},\"preferenceId\":20},{\"details\":{\"enabled\":\"Y\"},\"preferenceId\":21},{\"details\":{\"enabled\":\"Y\"},\"preferenceId\":22}],\"subscriptions\":[{\"optInStatus\":\"Y\",\"subscriptionId\":\"1\"},{\"optInStatus\":\"Y\",\"subscriptionId\":\"2\"},{\"optInStatus\":\"Y\",\"subscriptionId\":\"3\"},{\"optInStatus\":\"Y\",\"subscriptionId\":\"4\"},{\"optInStatus\":\"Y\",\"subscriptionId\":\"5\"},{\"optInStatus\":\"Y\",\"subscriptionId\":\"7\"},{\"optInStatus\":\"N\",\"subscriptionId\":\"10\"},{\"optInStatus\":\"Y\",\"subscriptionId\":\"11\"},{\"optInStatus\":\"Y\",\"subscriptionId\":\"24\"},{\"optInStatus\":\"Y\",\"subscriptionId\":\"25\"}]}")
+                Content = new StringContent("{\"address\":{\"country\":\"US\",\"zipCode\":" + zip + "},\"audit\":{\"registrationChannel\":\"M\"},\"credentials\":{\"loginUsername\":\" " + emailPrefix +"@mail.bigmac.social\",\"sendMagicLink\":true,\"type\":\"email\"},\"device\":{\"deviceId\":\"" + id + "\",\"deviceIdType\":\"AndroidId\",\"isActive\":\"Y\",\"os\":\"android\",\"osVersion\":\"12\",\"pushNotificationId\":\"fTVT0zZgFd4:APA91bGX2VWiuH_zkn2umGY5WWondtNLdoCXjehndHqvvx7bX4JFY-w2-brZIfWcvIEVVZxCpNxGbFmyAqCb5gN3z4daSUQ1ktTljTm5drQTDzeXVeoWPq7359cBe-ou8HKgBKPP1lGE\",\"timezone\":\"America/Denver\"},\"emailAddress\":\"" + emailPrefix + "@mail.bigmac.social\",\"firstName\":\""+firstName+"\",\"lastName\":\""+lastName+"\",\"optInForMarketing\":false,\"policies\":{\"acceptancePolicies\":{\"1\":true,\"4\":true,\"5\":false,\"6\":false}},\"preferences\":[{\"details\":{\"mobileApp\":\"en-US\",\"email\":\"en-US\"},\"preferenceId\":1},{\"details\":{\"mobileApp\":\"N\",\"email\":\"N\"},\"preferenceId\":2},{\"details\":{\"mobileApp\":\"Y\",\"email\":\"Y\"},\"preferenceId\":3},{\"details\":{\"mobileApp\":\"Y\",\"email\":\"Y\"},\"preferenceId\":4},{\"details\":{\"mobileApp\":\"Y\",\"email\":\"Y\"},\"preferenceId\":6},{\"details\":{\"mobileApp\":\"Y\",\"email\":\"Y\"},\"preferenceId\":7},{\"details\":{\"mobileApp\":\"Y\",\"email\":\"Y\"},\"preferenceId\":8},{\"details\":{\"mobileApp\":\"Y\",\"email\":\"Y\"},\"preferenceId\":9},{\"details\":{\"mobileApp\":\"Y\",\"email\":\"Y\"},\"preferenceId\":10},{\"details\":{\"mobileApp\":[4.0,5.0],\"email\":[1.0,2.0,3.0]},\"preferenceId\":11},{\"details\":{\"enabled\":\"Y\"},\"preferenceId\":12},{\"details\":{\"enabled\":\"Y\"},\"preferenceId\":13},{\"details\":{\"enabled\":\"Y\"},\"preferenceId\":14},{\"details\":{\"enabled\":\"Y\"},\"preferenceId\":15},{\"details\":{\"enabled\":\"Y\"},\"preferenceId\":16},{\"details\":{\"enabled\":\"Y\"},\"preferenceId\":17},{\"details\":{\"enabled\":\"Y\"},\"preferenceId\":18},{\"details\":{\"enabled\":\"Y\"},\"preferenceId\":19},{\"details\":{\"enabled\":\"Y\"},\"preferenceId\":20},{\"details\":{\"enabled\":\"Y\"},\"preferenceId\":21},{\"details\":{\"enabled\":\"Y\"},\"preferenceId\":22}],\"subscriptions\":[{\"optInStatus\":\"Y\",\"subscriptionId\":\"1\"},{\"optInStatus\":\"Y\",\"subscriptionId\":\"2\"},{\"optInStatus\":\"Y\",\"subscriptionId\":\"3\"},{\"optInStatus\":\"Y\",\"subscriptionId\":\"4\"},{\"optInStatus\":\"Y\",\"subscriptionId\":\"5\"},{\"optInStatus\":\"Y\",\"subscriptionId\":\"7\"},{\"optInStatus\":\"N\",\"subscriptionId\":\"10\"},{\"optInStatus\":\"Y\",\"subscriptionId\":\"11\"},{\"optInStatus\":\"Y\",\"subscriptionId\":\"24\"},{\"optInStatus\":\"Y\",\"subscriptionId\":\"25\"}]}")
                 {
                     Headers =
                     {
@@ -105,12 +109,11 @@ namespace AccountBot
             {
                 response.EnsureSuccessStatusCode();
                 var body = await response.Content.ReadAsStringAsync();
-                Console.WriteLine(body);
-                return body;
+                GetAccessToken(body);
             }
         }
 
-        private static Random random = new Random();
+        
         private static string GetRandomHexNumber(int digits)
         {
             byte[] buffer = new byte[digits / 2];
@@ -119,6 +122,18 @@ namespace AccountBot
             if (digits % 2 == 0)
                 return result;
             return result + random.Next(16).ToString("X");
+        }
+
+        public static (string, string) GetAccessToken(string body)
+        {
+            Regex Tok = new Regex(@"(?<=Token.: .)(.*?)(?=.,)");
+            MatchCollection Tokmatches = Tok.Matches(body);
+
+            Regex Rtok = new Regex(@"(?<=refreshToken.: .)(.*?)(?=.,)");
+            MatchCollection Rtokmatches = Rtok.Matches(body);
+
+
+            return (Tokmatches[0].Value, Rtokmatches[0].Value);
         }
     }
 }

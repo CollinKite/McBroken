@@ -8,10 +8,10 @@ namespace AccountBot
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             Controller controller = new();
-            controller.Start();
+            await controller.Start();
         }
 
         
