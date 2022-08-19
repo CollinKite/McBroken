@@ -281,10 +281,6 @@ def home():
         return jsonify({'data': data})
   
   
-# A simple function to calculate the square of a number
-# the number to be squared is sent in the URL when we use GET
-# on the terminal type: curl http://127.0.0.1:5000 / home / 10
-# this returns 100 (square of 10)
 @app.route('/createAccount/<string:email>', methods = ['GET'])
 def disp(email):
     token = GetJWTToken()
@@ -295,4 +291,4 @@ def disp(email):
 # driver function
 if __name__ == '__main__':
   
-    app.run()
+    app.run(host='0.0.0.0', port=5000)
