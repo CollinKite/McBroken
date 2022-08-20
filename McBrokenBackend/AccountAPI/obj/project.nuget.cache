@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "tgAFzkDoY9OIomhv2wAVm7nU9rrsl4Q7p7/2cRmpANzlOMyEeBSp3OiDMX9YzOZdvAvW7lwWUz18AVqIL4rIjg==",
+  "dgSpecHash": "q/AiwKV/ESwxlOl6kNvh4/8V0DIMejIp7hXqN8jKXG+tk1YtkQbnDvgYQ17nUMe4NSsXt19zuM8POVXlQDU2Ig==",
   "success": true,
   "projectFilePath": "C:\\Classes\\Q4\\PRO100\\McBroken\\McBrokenBackend\\AccountAPI\\AccountAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ckite\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\ckite\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\ckite\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512",
+    "C:\\Users\\ckite\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\ckite\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\ckite\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\ckite\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
