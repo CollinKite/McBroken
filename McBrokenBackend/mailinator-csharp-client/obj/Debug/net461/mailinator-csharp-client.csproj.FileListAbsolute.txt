@@ -114,3 +114,5 @@ C:\Users\Ed\Dev\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Debug\net4
 C:\Users\Ed\Dev\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Debug\net461\mailinator-csharp-client.csproj.CopyComplete
 C:\Users\Ed\Dev\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Debug\net461\mailinator-csharp-client.dll
 C:\Users\Ed\Dev\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Debug\net461\mailinator-csharp-client.pdb
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Debug\net461\mailinator-csharp-client.dll
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Debug\net461\mailinator-csharp-client.pdb

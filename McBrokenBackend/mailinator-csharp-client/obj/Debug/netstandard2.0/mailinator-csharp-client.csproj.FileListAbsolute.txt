@@ -8,3 +8,13 @@ C:\Users\Ed\Dev\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Debug\nets
 C:\Users\Ed\Dev\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Debug\netstandard2.0\mailinator-csharp-client.csproj.CoreCompileInputs.cache
 C:\Users\Ed\Dev\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Debug\netstandard2.0\mailinator-csharp-client.dll
 C:\Users\Ed\Dev\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Debug\netstandard2.0\mailinator-csharp-client.pdb
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\mailinator-csharp-client\bin\Debug\netstandard2.0\mailinator-csharp-client.deps.json
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\mailinator-csharp-client\bin\Debug\netstandard2.0\mailinator-csharp-client.dll
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\mailinator-csharp-client\bin\Debug\netstandard2.0\mailinator-csharp-client.pdb
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Debug\netstandard2.0\mailinator-csharp-client.csproj.AssemblyReference.cache
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Debug\netstandard2.0\mailinator-csharp-client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Debug\netstandard2.0\mailinator-csharp-client.AssemblyInfoInputs.cache
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Debug\netstandard2.0\mailinator-csharp-client.AssemblyInfo.cs
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Debug\netstandard2.0\mailinator-csharp-client.csproj.CoreCompileInputs.cache
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Debug\netstandard2.0\mailinator-csharp-client.dll
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Debug\netstandard2.0\mailinator-csharp-client.pdb

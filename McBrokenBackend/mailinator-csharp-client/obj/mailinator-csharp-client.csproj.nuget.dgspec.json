@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ed\\Dev\\McBroken\\McBrokenBackend\\mailinator-csharp-client\\mailinator-csharp-client.csproj": {}
+    "C:\\Classes\\Q4\\PRO100\\McBroken\\McBrokenBackend\\mailinator-csharp-client\\mailinator-csharp-client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ed\\Dev\\McBroken\\McBrokenBackend\\mailinator-csharp-client\\mailinator-csharp-client.csproj": {
+    "C:\\Classes\\Q4\\PRO100\\McBroken\\McBrokenBackend\\mailinator-csharp-client\\mailinator-csharp-client.csproj": {
       "version": "1.0.2",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ed\\Dev\\McBroken\\McBrokenBackend\\mailinator-csharp-client\\mailinator-csharp-client.csproj",
+        "projectUniqueName": "C:\\Classes\\Q4\\PRO100\\McBroken\\McBrokenBackend\\mailinator-csharp-client\\mailinator-csharp-client.csproj",
         "projectName": "MailinatorApiClient",
-        "projectPath": "C:\\Users\\Ed\\Dev\\McBroken\\McBrokenBackend\\mailinator-csharp-client\\mailinator-csharp-client.csproj",
-        "packagesPath": "C:\\Users\\Ed\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ed\\Dev\\McBroken\\McBrokenBackend\\mailinator-csharp-client\\obj\\",
+        "projectPath": "C:\\Classes\\Q4\\PRO100\\McBroken\\McBrokenBackend\\mailinator-csharp-client\\mailinator-csharp-client.csproj",
+        "packagesPath": "C:\\Users\\ckite\\.nuget\\packages\\",
+        "outputPath": "C:\\Classes\\Q4\\PRO100\\McBroken\\McBrokenBackend\\mailinator-csharp-client\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ckite\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

@@ -1,0 +1,11 @@
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\AccountAPI\obj\Docker\publish\AccountAPI.exe
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\AccountAPI\obj\Docker\publish\appsettings.Development.json
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\AccountAPI\obj\Docker\publish\appsettings.json
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\AccountAPI\obj\Docker\publish\AccountAPI.dll
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\AccountAPI\obj\Docker\publish\AccountAPI.deps.json
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\AccountAPI\obj\Docker\publish\AccountAPI.runtimeconfig.json
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\AccountAPI\obj\Docker\publish\AccountAPI.pdb
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\AccountAPI\obj\Docker\publish\Microsoft.OpenApi.dll
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\AccountAPI\obj\Docker\publish\Swashbuckle.AspNetCore.Swagger.dll
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\AccountAPI\obj\Docker\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\AccountAPI\obj\Docker\publish\Swashbuckle.AspNetCore.SwaggerUI.dll

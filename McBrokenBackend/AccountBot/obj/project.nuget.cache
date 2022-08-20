@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "7GiyxZZA6EDyhP9NSFD6399a0/s89IHOsfwa/vo5hbYmRVI5H9kcPK7/E3KJK8EEGoeA5QWql6vEn/vrDZ+6AA==",
+  "dgSpecHash": "0z1NoUio8uavaYHYgM2WBBadg9EROY1tdNiVno0DQ9MejOlFfyFDK/ZkpxeBGAzH5A1+jOIrH5aRVUGCDYAsPw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ed\\Dev\\McBroken\\McBrokenBackend\\AccountBot\\AccountBot.csproj",
+  "projectFilePath": "C:\\Classes\\Q4\\PRO100\\McBroken\\McBrokenBackend\\AccountBot\\AccountBot.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Ed\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\Ed\\.nuget\\packages\\restsharp\\108.0.1\\restsharp.108.0.1.nupkg.sha512"
+    "C:\\Users\\ckite\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\ckite\\.nuget\\packages\\restsharp\\108.0.1\\restsharp.108.0.1.nupkg.sha512"
   ],
   "logs": []
 }
