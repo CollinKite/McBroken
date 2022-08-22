@@ -1,0 +1,10 @@
+C:\Users\Ed\Source\Repos\CollinKite\McBroken\McBrokenBackend\mailinator-csharp-client\bin\Release\netstandard2.0\mailinator-csharp-client.deps.json
+C:\Users\Ed\Source\Repos\CollinKite\McBroken\McBrokenBackend\mailinator-csharp-client\bin\Release\netstandard2.0\mailinator-csharp-client.dll
+C:\Users\Ed\Source\Repos\CollinKite\McBroken\McBrokenBackend\mailinator-csharp-client\bin\Release\netstandard2.0\mailinator-csharp-client.pdb
+C:\Users\Ed\Source\Repos\CollinKite\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Release\netstandard2.0\mailinator-csharp-client.csproj.AssemblyReference.cache
+C:\Users\Ed\Source\Repos\CollinKite\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Release\netstandard2.0\mailinator-csharp-client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ed\Source\Repos\CollinKite\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Release\netstandard2.0\mailinator-csharp-client.AssemblyInfoInputs.cache
+C:\Users\Ed\Source\Repos\CollinKite\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Release\netstandard2.0\mailinator-csharp-client.AssemblyInfo.cs
+C:\Users\Ed\Source\Repos\CollinKite\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Release\netstandard2.0\mailinator-csharp-client.csproj.CoreCompileInputs.cache
+C:\Users\Ed\Source\Repos\CollinKite\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Release\netstandard2.0\mailinator-csharp-client.dll
+C:\Users\Ed\Source\Repos\CollinKite\McBroken\McBrokenBackend\mailinator-csharp-client\obj\Release\netstandard2.0\mailinator-csharp-client.pdb

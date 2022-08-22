@@ -7,7 +7,7 @@ open a terminal and CD into the "RegisterAccount" folder in the Backend
 
 install the dockerimage with the command:
 
-docker image build -t flask_docker -f McBrokenBackend\RegisterAccount\Dockerfile .
+docker image build -t flask_docker -f McBrokenBackend\RegisterAccount\DockerFile .
 
 
 once installed, run the docker image with the command:

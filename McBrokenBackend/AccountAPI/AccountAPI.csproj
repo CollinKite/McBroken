@@ -14,4 +14,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AccountBot\AccountBot.csproj" />
+    <ProjectReference Include="..\mailinator-csharp-client\mailinator-csharp-client.csproj" />
+  </ItemGroup>
+
 </Project>

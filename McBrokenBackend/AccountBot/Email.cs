@@ -9,6 +9,7 @@ using mailinator_csharp_client.Models.Messages.Entities;
 using mailinator_csharp_client.Models.Responses;
 using Newtonsoft.Json.Linq;
 using System.Text.RegularExpressions;
+using System.Collections;
 
 namespace AccountBot
 {
@@ -37,8 +38,19 @@ namespace AccountBot
                 Limit = 20,
                 Sort = Sort.asc
             };
-            FetchInboxResponse fetchInboxResponse = await mailinatorClient.MessagesClient.FetchInboxAsync(fetchInboxRequest);
-            EmailId = fetchInboxResponse.Messages[0].Id;
+            bool waitingForEmail = true;
+            while(waitingForEmail)
+            {
+                FetchInboxResponse fetchInboxResponse = await mailinatorClient.MessagesClient.FetchInboxAsync(fetchInboxRequest);
+                if(fetchInboxResponse.Messages.Count != 0)
+                {
+                    EmailId = fetchInboxResponse.Messages[0].Id;
+                    break;
+                }
+                
+            }
+            
+            
         }
         
         public async Task VerifyEmail()
@@ -50,18 +62,27 @@ namespace AccountBot
                 MessageId = EmailId
             };
             FetchMessageLinksResponse fetchLinksResponse = await mailinatorClient.MessagesClient.FetchMessageLinksAsync(fetchLinksRequest);
-            if(fetchLinksResponse.Links[2] == null)
+            for(int i = 0; i < fetchLinksResponse.Links.Count; i++)
             {
-                throw new Exception("Getting Message Failed");
+                Regex rx = new Regex(@"(?<=Fml=)(.*?)(?===)");
+                MatchCollection matches = rx.Matches(fetchLinksResponse.Links[i]);
+                if(matches.Count != 0)
+                {
+                    VerifyKey = matches[0].Value;
+                    return;
+                }
             }
-            Regex rx = new Regex(@"(?<=Fml=)(.*?)(?===)");
-            MatchCollection matches = rx.Matches(fetchLinksResponse.Links[2]);
-            VerifyKey = matches[0].Value;
-            if(VerifyKey == null)
-            {
-                throw new Exception("Failed Getting Email Key from Email");
-            }
+            throw new Exception("Getting Message Failed");
+        }
 
+        public async Task WipeEmail()
+        {
+            DeleteAllDomainMessagesRequest deleteAllDomainMessagesRequest = new DeleteAllDomainMessagesRequest()
+            {
+                Domain = "mail.bigmac.social"
+            };
+            DeleteAllDomainMessagesResponse deleteAllDomainMessagesResponse =
+                await mailinatorClient.MessagesClient.DeleteAllDomainMessagesAsync(deleteAllDomainMessagesRequest);
         }
 
        

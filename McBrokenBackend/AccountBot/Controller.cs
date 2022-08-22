@@ -9,10 +9,8 @@ namespace AccountBot
 {
     public class Controller
     {
-        public async Task Start()
+        public void Start()
         {
-            Account account = new Account();
-            await Account.RegisterAccount("kingbob", account.DeviceID);
 
 
             //Email email = new("code1");

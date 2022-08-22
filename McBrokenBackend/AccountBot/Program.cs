@@ -8,10 +8,12 @@ namespace AccountBot
 {
     internal class Program
     {
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
-            Controller controller = new();
-            await controller.Start();
+            Email email = new("test16");
+            email.GetInboxAsync().Wait();
+            email.VerifyEmail().Wait();
+
         }
 
         
