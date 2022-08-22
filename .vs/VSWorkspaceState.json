@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\McBrokenBackend",
+    "\\McBrokenBackend\\AccountAPI"
   ],
+  "SelectedNode": "\\McBrokenBackend\\AccountAPI\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
