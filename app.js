@@ -3,9 +3,18 @@ const bodyParser = require('body-parser');
 const { response } = require('express');
 const geoLite = require("geoip-lite");
 const ip = require('ip');
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
 
+const sessionconfig = {
+    secret: 'secret',
+    cookie: {}
+}
 const app = express();
 const port = 3000;
+
+app.use(cookieParser());
+app.use(session(sessionconfig));
 
 var userIP = "69.27.21.153";//ip.address();
 var geo = geoLite.lookup(userIP);
@@ -18,33 +27,11 @@ app.use(express.static("public"))
 app.set("views", "./views");
 app.set("view engine", "pug");
 
-app.get("/", (req,res) =>
-{
-    console.log(userIP)
-    console.log(geo);
-    res.render("home")
-})
+const indexRouter = require('./routes/index');
+app.use('', indexRouter);
 
-app.get("/location", (req,res) =>
-{
-    res.render("location")
-})
-
-app.get("/payment", (req, res) => {
-    res.render("payment")
-})
-
-app.get("/order", (req,res) =>
-{
-    res.render("order")
-})
-
-app.post("/order", (req,res) =>
-{
-    res.render("order")
-    // setMcAddress();
-    // setMcOrderNumber();
-})
+const usersRouter = require('./routes/users');
+app.use('/u', usersRouter);
 
 app.listen(port, () =>
 {

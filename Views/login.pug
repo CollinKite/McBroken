@@ -1,0 +1,22 @@
+extends layout 
+
+block layout-content 
+    div(class='loginBody') 
+        div(class="center")
+            h1 Login 
+            form(action="/u/login", method="post") 
+                div(class="txt_field")
+                    input(type="text", name="username", required)
+                    span
+                    label(for="username") Username
+                div(class="txt_field")
+                    input(type="password", name="password", required) 
+                    span
+                    label(for="password") Password
+                div(class="pass">Forgot Password?)
+                    //- label(for="forgotPassword") Forgot Password?
+                    input(type="submit", value="Login")
+                div(class="signup_link")
+                    label(for="signup") Don't have an account?
+                    a(href="/register") Sign Up
+                    //- a(href="/u/register") Not a member? Sign up now

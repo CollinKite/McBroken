@@ -1,0 +1,22 @@
+extends layout 
+
+block layout-content 
+    div(class='loginBody') 
+        div(class="center")
+            h1 Registration 
+            form(action="/u/login", method="post") 
+                div(class="txt_field")
+                    input(type="email", name="email", required)
+                    span
+                    label(for="email") Email
+                div(class="txt_field")
+                    input(type="password", name="password", required) 
+                    span
+                    label(for="password") Password
+                div(class="txt_field")
+                    input(type="password", name="confirmPassword", required) 
+                    span
+                    label(for="confirmPassword") Confirm Password
+                div(class="pass">Forgot Password?)
+                    //- label(for="forgotPassword") Forgot Password?
+                    input(type="submit", value="Register")
