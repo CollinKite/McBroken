@@ -153,6 +153,17 @@ router.post('/profile', async (req, res) => {
     }
 
 })
+
+////////////////////////////////////////////////////////////////////////////////////
+
+router.get('/order', async (req, res) => {
+    let model = {
+        loggedInUser: req.session.user
+    }
+    res.render('order', model);
+})
+
+////////////////////////////////////////////////////////////////////////////////////
         
 
 module.exports = router;
