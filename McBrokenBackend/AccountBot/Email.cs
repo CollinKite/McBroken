@@ -16,13 +16,14 @@ namespace AccountBot
     public class Email
     {
         public Email(string email) => this.email = email;
+        public Email() {;}
 
 
         public string email { get; set; }
         public string EmailId { get; set; }
         public string VerifyKey { get; set; }
 
-        MailinatorClient mailinatorClient = new MailinatorClient("e58fe65ca13548a39d178d65b4e374ea");
+        MailinatorClient mailinatorClient = new MailinatorClient("86d349d0d99b4bca8e37e2b86fbc76dd");
 
 
 

@@ -1478,11 +1478,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ed\\Source\\Repos\\CollinKite\\McBroken\\McBrokenBackend\\AccountAPI\\AccountAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Ed\\Desktop\\McBroken-main\\McBrokenBackend\\AccountAPI\\AccountAPI.csproj",
       "projectName": "AccountAPI",
-      "projectPath": "C:\\Users\\Ed\\Source\\Repos\\CollinKite\\McBroken\\McBrokenBackend\\AccountAPI\\AccountAPI.csproj",
+      "projectPath": "C:\\Users\\Ed\\Desktop\\McBroken-main\\McBrokenBackend\\AccountAPI\\AccountAPI.csproj",
       "packagesPath": "C:\\Users\\Ed\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ed\\Source\\Repos\\CollinKite\\McBroken\\McBrokenBackend\\AccountAPI\\obj\\",
+      "outputPath": "C:\\Users\\Ed\\Desktop\\McBroken-main\\McBrokenBackend\\AccountAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1503,11 +1503,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Ed\\Source\\Repos\\CollinKite\\McBroken\\McBrokenBackend\\AccountBot\\AccountBot.csproj": {
-              "projectPath": "C:\\Users\\Ed\\Source\\Repos\\CollinKite\\McBroken\\McBrokenBackend\\AccountBot\\AccountBot.csproj"
+            "C:\\Users\\Ed\\Desktop\\McBroken-main\\McBrokenBackend\\AccountBot\\AccountBot.csproj": {
+              "projectPath": "C:\\Users\\Ed\\Desktop\\McBroken-main\\McBrokenBackend\\AccountBot\\AccountBot.csproj"
             },
-            "C:\\Users\\Ed\\Source\\Repos\\CollinKite\\McBroken\\McBrokenBackend\\mailinator-csharp-client\\mailinator-csharp-client.csproj": {
-              "projectPath": "C:\\Users\\Ed\\Source\\Repos\\CollinKite\\McBroken\\McBrokenBackend\\mailinator-csharp-client\\mailinator-csharp-client.csproj"
+            "C:\\Users\\Ed\\Desktop\\McBroken-main\\McBrokenBackend\\mailinator-csharp-client\\mailinator-csharp-client.csproj": {
+              "projectPath": "C:\\Users\\Ed\\Desktop\\McBroken-main\\McBrokenBackend\\mailinator-csharp-client\\mailinator-csharp-client.csproj"
             }
           }
         }

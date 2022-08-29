@@ -880,11 +880,11 @@
   "project": {
     "version": "1.0.2",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ed\\Source\\Repos\\CollinKite\\McBroken\\McBrokenBackend\\mailinator-csharp-client\\mailinator-csharp-client.csproj",
+      "projectUniqueName": "C:\\Users\\Ed\\Desktop\\McBroken-main\\McBrokenBackend\\mailinator-csharp-client\\mailinator-csharp-client.csproj",
       "projectName": "MailinatorApiClient",
-      "projectPath": "C:\\Users\\Ed\\Source\\Repos\\CollinKite\\McBroken\\McBrokenBackend\\mailinator-csharp-client\\mailinator-csharp-client.csproj",
+      "projectPath": "C:\\Users\\Ed\\Desktop\\McBroken-main\\McBrokenBackend\\mailinator-csharp-client\\mailinator-csharp-client.csproj",
       "packagesPath": "C:\\Users\\Ed\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ed\\Source\\Repos\\CollinKite\\McBroken\\McBrokenBackend\\mailinator-csharp-client\\obj\\",
+      "outputPath": "C:\\Users\\Ed\\Desktop\\McBroken-main\\McBrokenBackend\\mailinator-csharp-client\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XjAYt/n8BQUUiECwScWD7kU2bEHuJhABP1RpFwNlKwUGFmYA8Z1RnDe91dV//ua/fSHmADlYZWrOEdWS4DyafA==",
+  "dgSpecHash": "CUUmxPFpEoxKcIi+QtnxQj1sYExpS6tDBdwzEh9+vL5oefmlEc3iEo9BX0EQqToui54YVxstW0di3CZJSv6CVw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ed\\Source\\Repos\\CollinKite\\McBroken\\McBrokenBackend\\AccountBot\\AccountBot.csproj",
+  "projectFilePath": "C:\\Users\\Ed\\Desktop\\McBroken-main\\McBrokenBackend\\AccountBot\\AccountBot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ed\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Ed\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

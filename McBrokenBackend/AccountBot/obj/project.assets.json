@@ -1157,11 +1157,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ed\\Source\\Repos\\CollinKite\\McBroken\\McBrokenBackend\\AccountBot\\AccountBot.csproj",
+      "projectUniqueName": "C:\\Users\\Ed\\Desktop\\McBroken-main\\McBrokenBackend\\AccountBot\\AccountBot.csproj",
       "projectName": "AccountBot",
-      "projectPath": "C:\\Users\\Ed\\Source\\Repos\\CollinKite\\McBroken\\McBrokenBackend\\AccountBot\\AccountBot.csproj",
+      "projectPath": "C:\\Users\\Ed\\Desktop\\McBroken-main\\McBrokenBackend\\AccountBot\\AccountBot.csproj",
       "packagesPath": "C:\\Users\\Ed\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ed\\Source\\Repos\\CollinKite\\McBroken\\McBrokenBackend\\AccountBot\\obj\\",
+      "outputPath": "C:\\Users\\Ed\\Desktop\\McBroken-main\\McBrokenBackend\\AccountBot\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1182,8 +1182,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Ed\\Source\\Repos\\CollinKite\\McBroken\\McBrokenBackend\\mailinator-csharp-client\\mailinator-csharp-client.csproj": {
-              "projectPath": "C:\\Users\\Ed\\Source\\Repos\\CollinKite\\McBroken\\McBrokenBackend\\mailinator-csharp-client\\mailinator-csharp-client.csproj"
+            "C:\\Users\\Ed\\Desktop\\McBroken-main\\McBrokenBackend\\mailinator-csharp-client\\mailinator-csharp-client.csproj": {
+              "projectPath": "C:\\Users\\Ed\\Desktop\\McBroken-main\\McBrokenBackend\\mailinator-csharp-client\\mailinator-csharp-client.csproj"
             }
           }
         }

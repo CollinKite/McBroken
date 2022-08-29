@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/vLW0l3fkxfDLO/0DrMj2+FREJvjE5hhEtut5oyWGeCnorom9BLWVkcKE5nf/pQosvldK9UaaFpZxRGxnekdTg==",
+  "dgSpecHash": "LBYhoMHr1JyvsSVK87I9AYANf1qabCxYfWqSJYA32lwj/HKZZiomfcSub5zBByGCZi6xSyfD9HfsvdXBmQD0Ow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ed\\Source\\Repos\\CollinKite\\McBroken\\McBrokenBackend\\AccountAPI\\AccountAPI.csproj",
+  "projectFilePath": "C:\\Users\\Ed\\Desktop\\McBroken-main\\McBrokenBackend\\AccountAPI\\AccountAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ed\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Ed\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
