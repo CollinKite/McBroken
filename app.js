@@ -30,8 +30,8 @@ app.set("view engine", "pug");
 const indexRouter = require('./routes/index');
 app.use('', indexRouter);
 
-const usersRouter = require('./routes/users');
-app.use('/u', usersRouter);
+// const usersRouter = require('./routes/users');
+// app.use('/u', usersRouter);
 
 app.listen(port, () =>
 {
