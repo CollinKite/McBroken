@@ -1,6 +1,7 @@
 const { MongoClient, ObjectId} = require('mongodb');
 
-const uri = "mongodb://localhost:27017";
+// const uri = "mongodb://localhost:27017"
+const uri = 'mongodb+srv://McBroken:Pro100@cluster0.r8wb6ir.mongodb.net/?retryWrites=true&w=majority'
 const dbName = "Test";
 const collectionName = "PRO100";
 
