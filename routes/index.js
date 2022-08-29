@@ -48,7 +48,7 @@ router.post('/login', async (req, res) => {
         }
 
         req.session.user = user;
-        res.redirect("/");
+        res.redirect("order");
     }else{
         let model = {
             errorMessage: "Invalid Login!",
