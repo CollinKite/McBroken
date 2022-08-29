@@ -4,7 +4,8 @@ block layout-content
     div(class='loginBody') 
         div(class="center")
             h1 Registration 
-            form(action="/u/login", method="post") 
+            span(class="error") #{errorMessage}
+            form(action="register", method="post") 
                 div(class="txt_field")
                     input(type="email", name="email", required)
                     span
@@ -20,3 +21,17 @@ block layout-content
                 div(class="pass">Forgot Password?)
                     //- label(for="forgotPassword") Forgot Password?
                     input(type="submit", value="Register")
+                div(class="signup_link")
+                    label(for="signup") Already a Member?
+                    a(href="/login") Login
+                span(class="passwordR") Password requires
+                br
+                span(class="passwordR") at least 8 characters
+                br
+                span(class="passwordR") at least 1 uppercase letter
+                br
+                span(class="passwordR") at least 1 lowercase letter
+                br
+                span(class="passwordR") at least 1 number
+                br
+                span(class="passwordR") at least 1 special character

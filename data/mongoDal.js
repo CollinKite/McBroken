@@ -60,7 +60,7 @@ const findUser = async (key, value) => {
 
 //////////////////////////////////////////////////////////////////////////
 
-const addUser = async (username, password, email, age, admin, questions) => {
+const addUser = async (email, password) => {
     const client = await MongoClient.connect(uri);
 
     try{
@@ -69,16 +69,8 @@ const addUser = async (username, password, email, age, admin, questions) => {
 
         
         var newUser = {
-            Username: username,
-            Password: password, 
             Email: email,
-            Age: age,
-            Admin: admin,
-            questions: [
-                questions[0],
-                questions[1],
-                questions[2]
-            ]
+            Password: password
         }
     const result = await collection.insertOne(newUser);
 

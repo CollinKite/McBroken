@@ -4,11 +4,12 @@ block layout-content
     div(class='loginBody') 
         div(class="center")
             h1 Login 
-            form(action="/u/login", method="post") 
+            span(class="error") #{errorMessage}
+            form(action="login", method="post") 
                 div(class="txt_field")
-                    input(type="text", name="username", required)
+                    input(type="text", name="email", required)
                     span
-                    label(for="username") Username
+                    label(for="email") Email
                 div(class="txt_field")
                     input(type="password", name="password", required) 
                     span
