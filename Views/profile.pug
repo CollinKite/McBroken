@@ -1,0 +1,34 @@
+extends layout 
+
+block layout-content 
+    div(class='loginBody') 
+        div(class="center")
+            h1 Profile 
+            span(class="error") #{errorMessage}
+            form(action="profile", method="post") 
+                div(class="txt_field")
+                    input(type="email", name="email", value=Email, required)
+                    span
+                    label(for="email") Email
+                div(class="txt_field")
+                    input(type="password", name="password", required) 
+                    span
+                    label(for="password") Password
+                div(class="txt_field")
+                    input(type="password", name="confirmPassword", required) 
+                    span
+                    label(for="confirmPassword") Confirm Password
+                div(class="pass">Update)
+                    //- label(for="forgotPassword") Forgot Password?
+                    input(type="submit", value="Update Profile")
+                span(class="passwordR") Password requires
+                br
+                span(class="passwordR") at least 8 characters
+                br
+                span(class="passwordR") at least 1 uppercase letter
+                br
+                span(class="passwordR") at least 1 lowercase letter
+                br
+                span(class="passwordR") at least 1 number
+                br
+                span(class="passwordR") at least 1 special character

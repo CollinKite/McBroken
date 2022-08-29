@@ -36,6 +36,7 @@ router.post('/login', async (req, res) => {
     let password = req.body.password;
 
     var userLogin = await dal.findUser("Email", email);
+    console.log(`This is the users Id on the login.post ${userLogin._id}`)
 
     if(userLogin && await bcrypt.compare(password, userLogin.Password)){
         console.log(`${email} logged in`);
@@ -58,6 +59,13 @@ router.post('/login', async (req, res) => {
         res.render("login", model);
     }
 })
+
+////////////////////////////////////////////////////////////////////////////////////
+
+router.get("/logout", async (req, res) => {
+    req.session.user = null;
+    res.redirect("/");
+} )
 
 ////////////////////////////////////////////////////////////////////////////////////
 
@@ -101,6 +109,51 @@ const regexValidate = (ele, pattern) => {
 }
 
 ////////////////////////////////////////////////////////////////////////////////////
+
+router.get('/profile', async (req, res) => {
+    let userInfo = await dal.findUser('Email', req.session.user.email);
+    console.log(`This is the email on the profile.get: ${req.session.user.email}`);
+
+    let model = {
+        loggedInUser: req.session.user,
+        Email: userInfo.Email,
+    }
+
+    res.render('profile', model);
+})
+
+router.post('/profile', async (req, res) => {
+    let email = req.body.email;
+    let password = req.body.password;
+    let confirmPassword = req.body.confirmPassword;
+    let isValidPassword = regexValidate(password, /(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[\W])[a-zA-Z\d\W]{8,}/);
+
+    if (email === '' && password !== confirmPassword && !isValidPassword) {
+        let model = {
+            errorMessage: 'Please fill out all fields and make sure the passwords match',
+            email: email,
+            password: password,
+            confirmPassword: confirmPassword
+        }
+        res.render('profile', model);
+    } else if(!email === '' && password == confirmPassword && isValidPassword){
+        let hashedPassword = await bcrypt.hash(password, 10);
+        let updatedInfo = {
+            Email: email,
+            Password: hashedPassword
+        }
+        await dal.updateUser(req.session.user.userId, updatedInfo);
+        res.redirect('/profile');
+    } else if(!email === '' && password === 'NA' && confirmPassword === 'NA'){
+        let updatedInfo = {
+            Email: email
+        }
+        await dal.updateUser(req.session.user.userId, updatedInfo);
+        res.redirect('/profile');
+    }
+
+})
+        
 
 module.exports = router;
 

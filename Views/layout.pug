@@ -12,13 +12,26 @@ html
                 ul(class="nav_links")
                     li 
                         a(href="/", data-active="home") Home
-                    li
-                        a(href="/login", data-active="home") Login
-                    li
-                        a(href="/register", data-active="home") Register
-
-            a(class="cta" href="#")
-                button Contact 
+                    if(loggedInUser)
+                        li 
+                            a(href="/profile", data-active="profile") Profile
+                        li 
+                            a(href="/logout", data-active="logout") Logout
+                    else
+                        li 
+                            a(href="/login", data-active="login") Login
+                        li 
+                            a(href="/register", data-active="register") Register
+                    //- li
+                    //-     a(href="/login", data-active="home") Login
+                    //- li
+                    //-     a(href="/register", data-active="home") Register
+            if(loggedInUser)
+                a(class="cta" href="#")
+                    button Order Now 
+            else
+                a(class="cta" href="#")
+                    button Contact 
 
         section(class="content")
             block layout-content

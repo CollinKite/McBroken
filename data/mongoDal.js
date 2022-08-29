@@ -87,27 +87,6 @@ const addUser = async (email, password) => {
 
 ///////////////////////////////////////////////////////////////////////////
 
-const findQuestions = async () => {
-    const client = await MongoClient.connect(uri);
-
-    try{
-        const db = client.db(dbName);
-        const collection = db.collection(collectionName);
-        
-        var query = {questions: {$exists: true}};
-        var results = await collection.find(query).toArray();
-
-        return results;
-    }catch(err){
-        console.log("findQuestions: Some error happened");
-        console.log(err);
-    }finally{
-        client.close();
-    }
-}
-
-///////////////////////////////////////////////////////////////////////////
-
 // find and delete a user
 const deleteUser = async (findKey) => {
     const client = await MongoClient.connect(uri);
@@ -133,5 +112,4 @@ const deleteUser = async (findKey) => {
 exports.findUser = findUser;
 exports.addUser = addUser;
 exports.updateUser = updateUser;
-exports.findQuestions = findQuestions;
 exports.deleteUser = deleteUser;
