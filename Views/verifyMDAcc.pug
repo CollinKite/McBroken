@@ -1,0 +1,12 @@
+extends layout 
+
+block layout-content 
+    div(class='mdabody') 
+        div(class="center")
+            h1 MDA 
+            span(class="error") #{errorMessage}
+            form(action="verifyMDAcc", method="post") 
+                p Please click now
+                div(class="pass">Forgot Password?)
+                    //- label(for="forgotPassword") Forgot Password?
+                    input(type="submit", value="Submit")

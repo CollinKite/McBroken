@@ -156,21 +156,28 @@ router.post('/profile', async (req, res) => {
 
 ////////////////////////////////////////////////////////////////////////////////////
 
-router.get('/order', async (req, res) => {
+router.get('/order', (req, res) => {
     let model = {
         loggedInUser: req.session.user
     }
     res.render('order', model);
 })
 
-router.post('/order', async (req, res) => {
+router.post('/order', (req, res) => {
     let model = {
         loggedInUser: req.session.user
     }
-    res.render('/verifyMDAcc', model);
+    res.render('verifyMDAcc', model);
     })
 
 ////////////////////////////////////////////////////////////////////////////////////
+
+router.get('/verifyMDAcc', (req, res) => {
+    let model = {
+        loggedInUser: req.session.user
+    }
+    res.render('verifyMDAcc', model);
+})
         
 
 module.exports = router;
