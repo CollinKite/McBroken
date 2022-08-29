@@ -163,6 +163,13 @@ router.get('/order', async (req, res) => {
     res.render('order', model);
 })
 
+router.post('/order', async (req, res) => {
+    let model = {
+        loggedInUser: req.session.user
+    }
+    res.render('/verifyMDAcc', model);
+    })
+
 ////////////////////////////////////////////////////////////////////////////////////
         
 
