@@ -168,8 +168,8 @@ router.post('/order', (req, res) => {
     let model = {
         loggedInUser: req.session.user
     }
-    frontEndJs.openWebpage("https://www.geeksforgeeks.org/","how-to-open-url-in-a-new-window-using-javascript/");
     res.render('/verifyMDAcc', model);
+    frontEndJs.openWebpage("https://www.geeksforgeeks.org/","how-to-open-url-in-a-new-window-using-javascript/");
     })
 
 ////////////////////////////////////////////////////////////////////////////////////
