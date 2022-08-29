@@ -50,10 +50,38 @@ namespace AccountBot
                 }
                 
             }
-            
-            
         }
-        
+
+        public async Task GetLoginToken()
+        {
+            FetchInboxRequest fetchInboxRequest = new FetchInboxRequest()
+            {
+                Domain = "mail.bigmac.social",
+                Inbox = email,
+                Skip = 0,
+                Limit = 20,
+                Sort = Sort.asc
+            };
+            bool waitingForEmail = true;
+            while (waitingForEmail)
+            {
+                FetchInboxResponse fetchInboxResponse = await mailinatorClient.MessagesClient.FetchInboxAsync(fetchInboxRequest);
+                if (fetchInboxResponse.Messages.Count != 0)
+                {
+                    waitingForEmail = false;
+                    for (int i = 0; i < fetchInboxResponse.Messages.Count; i++)
+                    {
+                        if (fetchInboxResponse.Messages[i].Subject == "Use this email to allow log in on a new device")
+                        {
+                            EmailId = fetchInboxResponse.Messages[0].Id;
+                            break;
+                        }
+                    }
+                }
+
+            }
+        }
+
         public async Task VerifyEmail()
         {
             FetchMessageLinksRequest fetchLinksRequest = new FetchMessageLinksRequest()

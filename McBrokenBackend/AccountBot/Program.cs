@@ -10,7 +10,7 @@ namespace AccountBot
     {
         static void Main(string[] args)
         {
-            Email email = new("test16");
+            Email email = new("mcBroken13");
             email.GetInboxAsync().Wait();
             email.VerifyEmail().Wait();
 

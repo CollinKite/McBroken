@@ -49,6 +49,7 @@ namespace AccountAPI
                     //update email list
                     string newNum = (int.Parse(prefix) + 1).ToString();
                     File.WriteAllText("account.txt", newNum);
+
                     email.GetInboxAsync().Wait();
                     email.VerifyEmail().Wait();
                     email.WipeEmail();
@@ -75,8 +76,9 @@ namespace AccountAPI
                 }
                 else
                 {
-                    email.GetInboxAsync().Wait();
+                    email.GetLoginToken().Wait();
                     email.VerifyEmail().Wait();
+                    email.WipeEmail().Wait();
                     return email.VerifyKey;
                 }
             })

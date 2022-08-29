@@ -98,3 +98,11 @@ C:\Users\Ed\Desktop\McBroken-main\McBrokenBackend\AccountAPI\obj\Debug\net6.0\re
 C:\Users\Ed\Desktop\McBroken-main\McBrokenBackend\AccountAPI\obj\Debug\net6.0\AccountAPI.pdb
 C:\Users\Ed\Desktop\McBroken-main\McBrokenBackend\AccountAPI\obj\Debug\net6.0\AccountAPI.genruntimeconfig.cache
 C:\Users\Ed\Desktop\McBroken-main\McBrokenBackend\AccountAPI\obj\Debug\net6.0\ref\AccountAPI.dll
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\AccountAPI\bin\Debug\net6.0\AccountBot.deps.json
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\AccountAPI\bin\Debug\net6.0\AccountBot.runtimeconfig.json
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\AccountAPI\bin\Debug\net6.0\AccountBot.exe
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\AccountAPI\bin\Debug\net6.0\RestSharp.dll
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\AccountAPI\bin\Debug\net6.0\AccountBot.dll
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\AccountAPI\bin\Debug\net6.0\mailinator-csharp-client.dll
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\AccountAPI\bin\Debug\net6.0\AccountBot.pdb
+C:\Classes\Q4\PRO100\McBroken\McBrokenBackend\AccountAPI\bin\Debug\net6.0\mailinator-csharp-client.pdb
