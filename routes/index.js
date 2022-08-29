@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcrypt');
+const open = require("open");
 
 const dal = require('../data/mongoDAL');
-const frontEndJs = require("../Public/JS/script");
 
 ////////////////////////////////////////////////////////////////////////////////////
 
@@ -168,8 +168,8 @@ router.post('/order', (req, res) => {
     let model = {
         loggedInUser: req.session.user
     }
-    res.render('/verifyMDAcc', model);
-    frontEndJs.openWebpage("https://www.geeksforgeeks.org/","how-to-open-url-in-a-new-window-using-javascript/");
+    res.render('verifyMDAcc', model);
+    open("https://www.geeksforgeeks.org/how-to-open-url-in-a-new-window-using-javascript/","browser");
     })
 
 ////////////////////////////////////////////////////////////////////////////////////
