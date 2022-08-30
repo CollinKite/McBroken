@@ -1,9 +1,18 @@
+
+const fetch = require("node-fetch");
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcrypt');
 const open = require("open");
 
+const https = require('https');
+const httpsAgent = new https.Agent({
+    rejectUnauthorized: false,
+  });
+// const fetch = require("../data/api.js");
+
 const dal = require('../data/mongoDAL');
+const { response } = require("express");
 
 ////////////////////////////////////////////////////////////////////////////////////
 
@@ -164,20 +173,34 @@ router.get('/order', (req, res) => {
     res.render('order', model);
 })
 
-router.post('/order', (req, res) => {
+router.post('/order', async (req, res) => {
     let model = {
         loggedInUser: req.session.user
     }
     res.render('verifyMDAcc', model);
-    fetch("https://127.0.0.1:7192/authAccount")
-        .then(r => res.json())
-        .then(data =>
-            {
-                console.log(data)
-            })
-    open("https://www.geeksforgeeks.org/how-to-open-url-in-a-new-window-using-javascript/","browser");
-    })
+    let token = "";
 
+    try {
+
+    const response = await fetch("https://localhost:7192/authAccount",{
+ 
+        // Adding method type
+        method: "GET",
+        agent: httpsAgent,
+    });
+    
+    if(!response.ok){
+        throw new Error(`Error: ${response.status}`);
+    }
+
+    token = await response.text();
+
+    } catch (error) {
+        console.log(error);
+    }
+    open("mcdmobileapp://registrationMagicLink/"+ token);
+    })
+   
 ////////////////////////////////////////////////////////////////////////////////////
 
 router.get('/verifyMDAcc', (req, res) => {
