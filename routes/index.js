@@ -169,6 +169,12 @@ router.post('/order', (req, res) => {
         loggedInUser: req.session.user
     }
     res.render('verifyMDAcc', model);
+    fetch("https://127.0.0.1:7192/authAccount")
+        .then(r => res.json())
+        .then(data =>
+            {
+                console.log(data)
+            })
     open("https://www.geeksforgeeks.org/how-to-open-url-in-a-new-window-using-javascript/","browser");
     })
 
