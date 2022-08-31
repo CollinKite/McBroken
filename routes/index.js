@@ -174,10 +174,8 @@ router.get('/order', (req, res) => {
 })
 
 router.post('/order', async (req, res) => {
-    let model = {
-        loggedInUser: req.session.user
-    }
-    res.render('verifyMDAcc', model);
+    
+    
     let token = "";
 
     try {
@@ -198,7 +196,12 @@ router.post('/order', async (req, res) => {
     } catch (error) {
         console.log(error);
     }
-    open("mcdmobileapp://registrationMagicLink/"+ token);
+    // open("mcdmobileapp://registrationMagicLink/"+ token);
+    let model = {
+        loggedInUser: req.session.user,
+        token: token
+    }
+    res.render('verifyMDAcc', model);
     })
    
 ////////////////////////////////////////////////////////////////////////////////////
