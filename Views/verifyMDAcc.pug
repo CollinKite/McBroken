@@ -3,10 +3,10 @@ extends layout
 block layout-content 
     div(class='mdabody') 
         div(class="center")
-            h1 MDA 
+            h1 Start Device Authentication 
             span(class="error") #{errorMessage}
             form(action="verifyMDAcc", method="post") 
-                p Please click now
                 div(class="pass">Forgot Password?)
                     //- label(for="forgotPassword") Forgot Password?
-                    a(href="mcdmobileapp://registrationMagicLink/"+ token) Verify Email
+                    a(href="mcdmobileapp://registrationMagicLink/"+ token) Click Here First To Auth Your Device
+                    input(type="submit", value="Continue", onClick="")

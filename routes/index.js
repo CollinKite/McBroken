@@ -204,7 +204,8 @@ router.post('/order', async (req, res) => {
     res.render('verifyMDAcc', model);
     })
    
-////////////////////////////////////////////////////////////////////////////////////
+    
+///////////////////////////////////
 
 router.get('/verifyMDAcc', (req, res) => {
     let model = {
@@ -212,6 +213,48 @@ router.get('/verifyMDAcc', (req, res) => {
     }
     res.render('verifyMDAcc', model);
 })
+
+router.post('/verifyMDAcc', async (req, res) => {
+    
+    
+    let token = "";
+
+    try {
+
+    const response = await fetch("https://localhost:7192/loginToken",{
+ 
+        // Adding method type
+        method: "GET",
+        agent: httpsAgent,
+    });
+    
+    if(!response.ok){
+        throw new Error(`Error: ${response.status}`);
+    }
+
+    token = await response.text();
+
+    } catch (error) {
+        console.log(error);
+    }
+    // open("mcdmobileapp://registrationMagicLink/"+ token);
+    let model = {
+        loggedInUser: req.session.user,
+        token: token
+    }
+    res.render('loginMDAcc', model);
+    })
+
+/////////////////////////////////////////////////
+
+router.get('/loginMDAcc', (req, res) => {
+    let model = {
+        loggedInUser: req.session.user
+    }
+    res.render('loginMDAcc', model);
+})
+
+
         
 
 module.exports = router;
