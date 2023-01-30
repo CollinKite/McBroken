@@ -23,7 +23,7 @@ namespace AccountBot
         public string EmailId { get; set; }
         public string VerifyKey { get; set; }
 
-        MailinatorClient mailinatorClient = new MailinatorClient("86d349d0d99b4bca8e37e2b86fbc76dd");
+        MailinatorClient mailinatorClient = new MailinatorClient("Mailinator API KEY Goes HERE");
 
 
 
